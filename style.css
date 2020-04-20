@@ -108,6 +108,7 @@ main {
 }
 
 .blog-image {
+	width: 270px;
 	height: 180px;
 	float: left;
 }
@@ -124,6 +125,10 @@ main {
 .blog-date {
 	font-size: 12px;
 	display: inline-block;
+}
+
+.blog-item:last-child {
+	border-bottom: none;
 }
 
 .category {
@@ -156,7 +161,7 @@ main {
  float: left;
  }
 
-.sidebar-headline,.instagram-headline,.categories-hedaline {
+.sidebar-headline,.instagram-headline,.categories-headline {
 	border-bottom: 8px solid #f7f7f7;
 	text-align: center;
 	line-height: 0.6;
@@ -224,4 +229,71 @@ footer {
 
 .footer-text {
 	color: #fff;
+}
+
+@media screen and (max-width: 425px) {
+
+header {
+	width: 100%;
+}
+
+.social {
+	display: none;
+}
+
+.nav-list {
+	width: 100%;
+}
+
+.nav-list-item {
+	width: 100%;
+	margin: 0 0 10px 0;
+}
+
+.main-visual-content {
+	width: 100%;
+}
+
+main {
+	width: 100%;
+}
+
+.blog {
+	width: 100%;
+	margin: 0;
+}
+
+.blog-box {
+	padding-right: 2px;
+	padding-left: 2px;
+}
+
+.blog-image {
+	width: 49%;
+}
+
+.blog-text {
+	width: 49%;
+	padding-top: 5px;
+}
+
+.pagination {
+	padding: 0 0 50px 0;
+}
+
+.sidebar {
+	width: 100%;
+ padding-right: 3px;
+	padding-left: 3px;
+}
+
+.instagram-box {
+	width: 48%;
+	padding-top: 48%;
+}
+
+.instagram-box:nth-child(odd) {
+	margin-right: 4%;
+}
+
 }
